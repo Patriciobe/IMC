@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMC</title>
 </head>
+
 <body>
-  <iframe src="https://imc.com.ec/" width="100%" height="1920px" frameborder="0"></iframe>
+  <iframe id= "miIframe" src="https://imc.com.ec/" width="100%" frameborder="0"></iframe>
 
 </body>
+<script>
+  // Obtener la altura de la pantalla del dispositivo
+  var alturaPantalla = window.innerHeight;
+
+  // Obtener una referencia al iframe
+  var iframe = document.getElementById('miIframe');
+
+  // Establecer la altura del iframe igual a la altura de la pantalla
+  iframe.style.height = alturaPantalla + 'px';
+
+</script>
+
 </html>
